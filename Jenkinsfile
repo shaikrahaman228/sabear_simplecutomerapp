@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label "master"
+        label "any"
     }
     tools {
         // Note: this should match with the tool name configured in your jenkins instance (JENKINS_URL/configureTools/)
@@ -13,7 +13,7 @@ pipeline {
         // This can be http or https
         NEXUS_PROTOCOL = "http"
         // Where your Nexus is running
-        NEXUS_URL = "18.216.151.197:8081/"
+        NEXUS_URL = "44.203.82.248:8081/"
         // Repository where we will upload the artifact
         NEXUS_REPOSITORY = "soanrqube"
         // Jenkins credential id to authenticate to Nexus OSS
